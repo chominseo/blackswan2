@@ -92,7 +92,8 @@
 						</c:if>
 						<a href="/blackswan2/funding/detail?id=${f.id}">
 							<div class="item-img">
-								<img src="../images/.jpg">
+								<img
+								src="https://happybean-phinf.pstatic.net/20190516_270/1557995844250za2Lj_JPEG/00.jpg?type=w720">
 							</div>
 							<div class="item-info">
 								<div class="title">${f.title}</div>

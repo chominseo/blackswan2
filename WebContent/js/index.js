@@ -6,7 +6,7 @@ window.addEventListener("load", function() {
 	var prev = banner.querySelector(".prev-banner");
 	var next = banner.querySelector(".next-banner");
 
-	prev.onclick = function() {
+	next.onclick = function() {
 		var main = banner.querySelector(".main");
 		var left;
 
@@ -25,7 +25,7 @@ window.addEventListener("load", function() {
 
 	};
 
-	next.onclick = function() {
+	prev.onclick = function() {
 		var main = banner.querySelector(".main");
 		var right;
 

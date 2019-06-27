@@ -126,8 +126,7 @@ public class OracleFundingDao implements FundingDao {
 		st.setString(6, funding.getSdate());
 
 		st.setString(7, funding.getEdate());
-		st.setInt(8, funding.getState());
-		st.setString(9, funding.getContent());
+		st.setString(8, funding.getContent());
 
 		result = st.executeUpdate();
 
