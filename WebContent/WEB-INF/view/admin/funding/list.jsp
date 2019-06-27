@@ -20,10 +20,10 @@
 	<jsp:include page="../../inc/header.jsp" />
 
 	<main>
-	<section id="admin-title">
+	<section id="title">
 		<h1>관리자</h1>
 	</section>
-	<section id="admin-tab">
+	<section id="tab">
 		<h1 class="hidden">관리자 탭</h1>
 		<div class="center">
 			<ul>
@@ -88,32 +88,7 @@
 				</table>
 			</section>
 
-			<c:set var="p" value="${(empty param.page) ? 1 : param.page}" />
-			<c:set var="start" value="${p - (p-1)%5}" />
-
-			<section class="paging">
-				<h1 class="hidden">페이저</h1>
-				<div class="first-page">
-					<a href="list?p=1">처음</a>
-				</div>
-				<div class="prev-page">
-					<a
-						href="list?page=${(p < 6)? p : p -5}&field=${param.field}&query=${param.query}">이전</a>
-				</div>
-				<ul>
-					<c:forEach var="n" begin="${start}" end="${start+4}" varStatus="s">
-						<li><a
-							href="list?page=${n}&field=${param.field}&query=${param.query}">${n}</a></li>
-					</c:forEach>
-				</ul>
-				<div class="next-page">
-					<a
-						href="list?page=${start+5}&field=${param.field}&query=${param.query}">다음</a>
-				</div>
-				<div class="end-page">
-					<a href="">끝</a>
-				</div>
-			</section>
+			<jsp:include page="../../inc/paging.jsp" />
 		</div>
 	</section>
 	</main>

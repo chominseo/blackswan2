@@ -12,7 +12,7 @@
 				<ul class="main-menu">
 					<li><a href="/blackswan2/funding/list">펀딩</a></li>
 					<c:if test="${ssid != null }">
-					<li><a href="/blackswan2/funding/reg2">등록신청</a></li>
+					<li><a href="/blackswan2/funding/reg">등록신청</a></li>
 					</c:if>
 					<c:if test="${ssid == null}">
 					<li><a href="/blackswan2/member/login">등록신청</a></li>

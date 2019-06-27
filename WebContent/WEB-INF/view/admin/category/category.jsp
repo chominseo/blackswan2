@@ -9,9 +9,8 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta http-equiv="X-UA-Compatible" content="ie=edge">
 <title>Black Swan Funding</title>
-<!-- <link rel="stylesheet" type="text/css" href="../css/style.css">
-<link rel="stylesheet" type="text/css" href="../css/admin.css"> -->
-<link rel="stylesheet" type="text/css" href="../css/style2.css">
+<!-- <link rel="stylesheet" type="text/css" href="../css/admin.css"> -->
+<link rel="stylesheet" type="text/css" href="../css/style.css">
 <script src="../js/admin/category/category.js"></script>
 </head>
 <body>
@@ -19,10 +18,10 @@
 	<jsp:include page="../../inc/header.jsp" />
 
 	<main>
-	<section id="admin-title">
+	<section id="title">
 		<h1>관리자</h1>
 	</section>
-	<section id="admin-tab">
+	<section id="tab">
 		<h1 class="hidden">관리자 탭</h1>
 		<div class="center">
 			<ul>

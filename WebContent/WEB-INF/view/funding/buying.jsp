@@ -1,5 +1,6 @@
+
 <%@ page language="java" contentType="text/html; charset=UTF-8"
-    pageEncoding="UTF-8"%>
+	pageEncoding="UTF-8"%>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 
 <!DOCTYPE html>
@@ -8,11 +9,17 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta http-equiv="X-UA-Compatible" content="ie=edge">
-<script type="text/javascript" src=".././js/funding/buying.js"></script>
 <title>Black Swan Funding</title>
+<link rel="stylesheet" type="text/css" href="../css/style.css">
+<script type="text/javascript" src=".././js/funding/buying.js"></script>
+
 </head>
+
+
 <body>
-	<div id="body">
+	<h1 class="hidden">BLACKSWAN</h1>
+	<div class="class b-fundingreg">
+		<jsp:include page="../inc/header.jsp" />
 		<main>
 			<section>
 				<h1>펀딩결제</h1>
@@ -58,6 +65,7 @@
 				</form>
 			</section>
 		</main>	
+	<jsp:include page="../inc/footer.jsp" />
 	</div>
 </body>
 </html>

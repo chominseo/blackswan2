@@ -63,30 +63,7 @@
 				</form>
 			</section>
 
-			<c:set var="page" value="${(empty param.p)? 1: param.p}" />
-			<c:set var="start" value="${page-(page-1)%5}" />
-			<c:set var="end" value="" />
-			<section id="pager">
-				<h1 class="d-none">페이지</h1>
-				<div>
-					<div>
-						<a href="${(page<6)?page:page-5}"></a>이전
-					</div>
-
-					<ul>
-						<c:forEach var="q" begin="${start}" end="${start+4}" varStatus="s">
-							<li><a href="list?p=${q}"> ${q}</a></li>
-
-						</c:forEach>
-
-
-					</ul>
-					<div>
-						<a href="list?p=${start+5}"> 다음</a>
-					</div>
-
-				</div>
-			</section>
+			<jsp:include page="../inc/paging.jsp" />
 		</section>
 		</main>
 	</div>

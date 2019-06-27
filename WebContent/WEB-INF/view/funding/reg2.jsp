@@ -1,32 +1,23 @@
-
-<%@page import="java.util.Scanner"%>
-<%@page import="java.io.FileInputStream"%>
-<%@page import="java.util.List"%>
-<%@page import="java.util.ArrayList"%>
 <%@ page language="java" contentType="text/html; charset=UTF-8"
 	pageEncoding="UTF-8"%>
-<%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 
 <!DOCTYPE html>
 <html lang="ko">
-
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta http-equiv="X-UA-Compatible" content="ie=edge">
 <title>Black Swan Funding</title>
+<link rel="stylesheet" type="text/css" href="../css/style.css">
 
 </head>
 
+
 <body>
-
-<h1 class="hidden">BLACKSWAN</h1>
-	<jsp:include page="../inc/header.jsp" />
-
-	<div id="body">
-		<div class="content-box">
-
-
+	<h1 class="hidden">BLACKSWAN</h1>
+	<div class="class b-fundingreg">
+		<jsp:include page="../inc/header.jsp" />
 			<main>
 
 
@@ -93,10 +84,7 @@
 			</section>
 			</main>
 
-		</div>
+	<jsp:include page="../inc/footer.jsp" />
 	</div>
-
-
 </body>
-
 </html>

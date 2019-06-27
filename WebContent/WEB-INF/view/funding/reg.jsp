@@ -78,66 +78,7 @@
 							<td><input type="button" name="p-add" value="추가"></td>
 							<td><input type="button" name="p-del" value="삭제"></td>
 						</tr>
-	<section id="main">
-		<h1 class="hidden">펀딩등록 페이지</h1>
-		<div class="center">
-			<form action="reg" method="post" enctype="multipart/form-data">
-				<table class="list-table column">
-					<tr>
-						<td>카테고리</td>
-						<td>
-							<select name="categoryId" >
-								<option value="4">사료</option>
-								<option value="5">간식</option>
-								<option value="6">배변용품</option>
-								<option value="7">건강관리</option>
-								<option value="8">미용용품</option>
-								<option value="9">장난감</option>
-								<option value="10">리빙</option>
-								<option value="11">패션</option>
-								<option value="12">야외용품</option>
-								<option value="13">기타</option>
-							</select>
-						</td>
-					</tr>
-					<tr>
-						<td>프로젝트 제목</td>
-						<td><textarea name="title"></textarea></td>
-					</tr>
-					<tr>
-						<td>목표 금액</td>
-						<td><input type="text" name="tAmount"></td>
-					</tr>
-					<tr>
-						<td>프로젝트 이미지</td>
-						<td><input type="file" name="introImg"></td>
-					</tr>
-					<tr>
-						<td>프로젝트 희망시작일</td>
-						<td><input type="date" name="sdate"></td>
-					</tr>
-					<tr>
-						<td>프로젝트 희망종료일</td>
-						<td><input type="date" name="edate"></td>
-					</tr>
-					<tr>
-						<td>상태</td>
-						<td><input type="text" name="state"></td>
-					</tr>
-					<tr>
-						<td>프로젝트 소개</td>
-						<td><textarea name="content"></textarea></td>
-					</tr>
-					<tr>
-						<td>리워드 내용</td>
-						<td>금액<input type="text" name="rPrice"></td>
-						<td>내용<input type="text" name="rContent"></td>
-					</tr>
-					<tr>
-					  <td><input type="button" name="p-add" value="추가"></td>
-					  <td><input type="button" name="p-del" value="삭제"></td>
-					</tr>
-						
+
 
 					</table>
 					<div>
