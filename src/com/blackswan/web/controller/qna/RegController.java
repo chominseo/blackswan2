@@ -22,7 +22,7 @@ public class RegController extends HttpServlet {
 	@Override
 	protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
 
-		
+		req.getRequestDispatcher("/WEB-INF/view/qna/reg.jsp").forward(req,resp);
 	}
 	
 }
