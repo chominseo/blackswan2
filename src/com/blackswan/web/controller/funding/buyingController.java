@@ -26,12 +26,15 @@ public class buyingController extends HttpServlet {
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 	
 		HttpSession session = request.getSession();
-		int sessionId = (int) session.getAttribute("ssid");
+		
+		int sessionId;
+		if(session.getAttribute("ssid") != null && !session.getAttribute("ssid").equals(""))
+			sessionId = (int) session.getAttribute("ssid");
 
 		
 		FundingPriceDao fundingPrice = new OracleFundingPriceDao();
 		
-		int id = 63;
+		int id = 0;
 		String id_ = request.getParameter("id");
 		
 		if(id_ != null && !id_.equals(""))

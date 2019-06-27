@@ -53,7 +53,7 @@ public class RegController extends HttpServlet {
 		String title = request.getParameter("title"); 
 		int tAmount = Integer.parseInt(request.getParameter("tAmount"));
 		String sdate = request.getParameter("sdate"); 
-		String edate = request.getParameter("edate");  
+		String edate = request.getParameter("edate");
 		String content = request.getParameter("content");
 		 
 		
@@ -111,7 +111,6 @@ public class RegController extends HttpServlet {
 		funding.setSdate(sdate); 
 		funding.setEdate(edate); 
 		funding.setContent(content);
-		
 		
 		int result =0;
 		
