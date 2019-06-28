@@ -6,13 +6,12 @@ window.addEventListener("load", function(){
     
     var email = document.getElementsByName("email").value;
     
-    alert(email);
     var name = document.getElementsByName("name").value;
     var pw = document.getElementsByName("pw").value;
     var pwc = document.getElementsByName("pwc").value;
     var phone = document.getElementsByName("phone").value;
      
-    if (!email){
+ /*   if (!email){
         alert("이메일을 입력하세요.")
         return;
     }
@@ -31,7 +30,7 @@ window.addEventListener("load", function(){
     if (!phone){
         alert("전화번호를 입력하세요.")
         return;
-    }
+    }*/
     
     };
 });

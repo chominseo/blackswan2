@@ -83,7 +83,7 @@
 
 
 				<ul>
-					<c:forEach var="f" items="${iflist}" begin="1" end="3">
+					<c:forEach var="f" items="${iflist}" begin="0" end="2">
 						<c:if test="${f.partRate >= 100}">
 							<li class="complete">
 						</c:if>

@@ -6,6 +6,10 @@
 <head>
 <meta charset="UTF-8">
 <title>Insert title here</title>
+<link rel="stylesheet" type="text/css" href="../css/admin.css">
+<link rel="stylesheet" type="text/css" href="../css/style3.css">
+
+<link rel="stylesheet" type="text/css" href="../css/style.css">
 </head>
 <body>
 	<h1>이벤트관리</h1>

@@ -27,7 +27,7 @@
 			<form action="signUp" method="post">
 				<input name="email" type="email" placeholder="email을 입력하세요">
 				<input name="name" type="text" placeholder="이름을 입력하세요">
-				<input name="pw" type="password" placeholder="새 비밀번호(영문,숫자,특수문자를 포함한 6~18자리)" minlength="6" maxlength="18">
+				<input name="pw" type="password" placeholder="새 비밀번호(6~18자리)" minlength="6" maxlength="18">
 				<input name="pwc" type="password" placeholder="비밀번호 확인">
 				<input name="phone" type="number" placeholder="휴대폰번호(‘-’ 없이 입력)">
 				

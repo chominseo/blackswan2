@@ -10,6 +10,7 @@
 <meta http-equiv="X-UA-Compatible" content="ie=edge">
 <title>Black Swan Funding</title>
 <link rel="stylesheet" type="text/css" href="../../css/style.css">
+<link rel="stylesheet" type="text/css" href="../../css/style3.css">
 <link rel="stylesheet" type="text/css" href="../../css/admin.css">
 <script src="/js/admin/member/list.js"></script>
 </head>

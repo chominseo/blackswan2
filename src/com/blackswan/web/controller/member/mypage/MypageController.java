@@ -17,7 +17,7 @@ import com.blackswan.web.dao.oracle.OracleMemberDao;
 import com.blackswan.web.entity.Funding;
 import com.blackswan.web.entity.view.FundingView;
 
-@WebServlet("/member/mypage2")
+@WebServlet("/member/mypage")
 public class MypageController extends HttpServlet {
 	@Override
 	protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
@@ -29,6 +29,7 @@ public class MypageController extends HttpServlet {
 		else {
 			resp.sendRedirect("/blackswan2/error");
 			return;
+			
 		}
 		MemberDao mDao = new OracleMemberDao();
 		FundingDao fundingDao = new OracleFundingDao();

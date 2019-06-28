@@ -27,14 +27,14 @@
 	</section>
 	<section id="section">
 		<div class="h-click">
-			<ul class="tap-menu-list">
-				<li><a href="#tap1">참여펀딩</a></li>
-				<li><a href="#tap2">개설펀딩</a></li>
-				<li><a href="#tap3">설정</a></li>
+			<ul class="tab-menu-list">
+				<li><a href="#tab1">참여펀딩</a></li>
+				<li><a href="#tab2">개설펀딩</a></li>
+				<li><a href="#tab3">설정</a></li>
 			</ul>
 		</div>
 		<div class="content-list">
-			<div id="tap1" class="d-none current">
+			<div id="tab1" class="d-none current">
 				<h2>참여펀팅</h2>
 				<div>
 					<form method="get">
@@ -53,7 +53,7 @@
 					</ul>
 				</div>
 			</div>
-			<div id="tap2" class="d-none">
+			<div id="tab2" class="d-none">
 				<h2>개설펀딩</h2>
 				<div>
 					<form method="get">
@@ -74,7 +74,7 @@
 				<input name="funding_edit" type="submit" value="펀딩 수정">
 				<input name="funding_del" type="submit" value="펀딩 삭제">
 			</div>
-			<div id="tap3" class="d-none">
+			<div id="tab3" class="d-none">
 				<h2>설정</h2>
 				<form action="profile" method="post" enctype="multipart/form-data">
 					<dl>

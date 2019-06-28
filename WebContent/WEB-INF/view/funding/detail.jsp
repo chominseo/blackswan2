@@ -8,6 +8,7 @@
 <meta charset="UTF-8">
 <title>Insert title here</title>
 <link rel="stylesheet" type="text/css" href=".././css/style.css">
+<link rel="stylesheet" type="text/css" href="../../css/style3.css">
 <link rel="stylesheet" type="text/css" href=".././css/funding.css">
 <script src="../js/funding/detail.js"></script> 
 

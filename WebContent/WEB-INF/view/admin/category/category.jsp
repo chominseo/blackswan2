@@ -9,7 +9,10 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta http-equiv="X-UA-Compatible" content="ie=edge">
 <title>Black Swan Funding</title>
-<!-- <link rel="stylesheet" type="text/css" href="../css/admin.css"> -->
+
+<link rel="stylesheet" type="text/css" href="../css/admin.css">
+<link rel="stylesheet" type="text/css" href="../css/style3.css">
+
 <link rel="stylesheet" type="text/css" href="../css/style.css">
 <script src="../js/admin/category/category.js"></script>
 </head>

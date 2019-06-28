@@ -24,13 +24,17 @@ public class buyingController extends HttpServlet {
 	
 	@Override
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-	
+		
 		HttpSession session = request.getSession();
 		
-		int sessionId;
+		int sessionId=0;
 		if(session.getAttribute("ssid") != null && !session.getAttribute("ssid").equals(""))
 			sessionId = (int) session.getAttribute("ssid");
 
+		if (session.getAttribute("ssid") == null && sessionId!=1) {
+			response.sendRedirect("/blackswan2/member/login");
+			return;
+		}
 		
 		FundingPriceDao fundingPrice = new OracleFundingPriceDao();
 		

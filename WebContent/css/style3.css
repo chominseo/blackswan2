@@ -10,7 +10,7 @@
  */
 
 /* ------------------------------ 1. @import url ------------------------------ */
-/* *, body, div, h1, h2, h3, h4, h5, h6, ul, ol, li, dl, dt, dd, span, a, a:link, a:visited, a:active, a:hover {
+*, body, div, h1, h2, h3, h4, h5, h6, ul, ol, li, dl, dt, dd, span, a, a:link, a:visited, a:active, a:hover {
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
@@ -27,11 +27,11 @@
 
 ul, ol, li, dl, dt, dd {
 	list-style-type: none; 
-} */
+} 
 
 
 /* ------------------------------ 2. °øÅë css ------------------------------ */
-/* .center {
+.center {
 	width: 1200px;
 	height: inherit;
 	margin: 0 auto;
@@ -39,13 +39,13 @@ ul, ol, li, dl, dt, dd {
 
 .hidden {
 	display: none;
-} */
+} 
 
 
 /* ------------------------------ 3. header css ------------------------------ */
 
 
-/* #header {
+#header {
 	background: #fff; 
 	height: 70px;
 	border-bottom: 1px solid #e5e5e5; 
@@ -207,11 +207,11 @@ ul, ol, li, dl, dt, dd {
 					color: #fff;
 					font-weight: bold;
 				}
- */
+
 
 /* ------------------------------ 4-1. nav css ------------------------------ */
 
-/* #nav {
+#nav {
 	background: #fff; 
 	height: 157px;
 }
@@ -318,12 +318,12 @@ ul, ol, li, dl, dt, dd {
 					text-align: center; 
 					display: inline-block;
 					width: 100%;
-				}		 */
+				}
 
 
 
 /* ------------------------------ 4-2. breadcrumb css ------------------------------ */
-/* #breadcrumb {
+#breadcrumb {
 	--background: #f4f4f4;
 	height: 40px;
 }
@@ -387,12 +387,12 @@ ul, ol, li, dl, dt, dd {
 				margin-top: 1px;
 				top: 50%;
 				left: -11px;
-			} */
+			} 
 			
 			
 /* ------------------------------ 4-3. list table css ------------------------------ */
 
-/* .list-table {
+.list-table {
 	width: 100%;
 	border-collapse : collapse;
 	text-align: center;
@@ -424,13 +424,13 @@ ul, ol, li, dl, dt, dd {
 			.list-table tbody tr .title {
 				text-align: left;
 				padding-left: 35px; 
-			} */
+			} 
 
 
 /* ------------------------------ 5-1. paging css ------------------------------ */
 
 
-/* #main {
+#main {
 	background: #fff;
 }
 
@@ -521,7 +521,7 @@ ul, ol, li, dl, dt, dd {
 			#main .paging .end-page:after {
 				right: 13px;
 				border-color: #666 #666 transparent transparent;
-			} */
+			} 
 
 
 

@@ -11,8 +11,6 @@ window.addEventListener("load", function() {
 		document.getElementById("demo").innerHTML = x;
 		fp.value = x;
 		
-		alert(fp.value);
-		
 	})
 
 });

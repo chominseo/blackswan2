@@ -10,6 +10,8 @@
 <meta http-equiv="X-UA-Compatible" content="ie=edge">
 <title>Black Swan Funding</title>
 <link rel="stylesheet" type="text/css" href="../../css/style.css">
+
+<link rel="stylesheet" type="text/css" href="../../css/style3.css">
 <link rel="stylesheet" type="text/css" href="../../css/admin.css">
 </head>
 
@@ -19,8 +21,8 @@
 	<jsp:include page="../../inc/header.jsp" />
 
 	<main>
-	<section id="admin-title">관리자</section>
-	<section id="admin-tab">
+	<section id="title"><h1>관리자</h1></section>
+	<section id="tab">
 		<h1 class="hidden">관리자 탭</h1>
 		<div class="center">
 			<ul>

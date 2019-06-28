@@ -227,7 +227,7 @@ public class SellerRegController extends HttpServlet {
 		if (result != 1)
 			response.sendRedirect("error");
 		else
-			response.sendRedirect("list");
+			response.sendRedirect("reg");
 
 	}
 
@@ -239,8 +239,8 @@ public class SellerRegController extends HttpServlet {
 		int sId = (int)session.getAttribute("ssid");
 		
 		SellerDao sDao = new OracleSellerDao();
+		
 		try {
-			System.out.println(sDao.get(sId));
 			if(sDao.get(sId) == null)
 				request.getRequestDispatcher("/WEB-INF/view/funding/reg2.jsp").forward(request, response);
 			else
@@ -252,7 +252,6 @@ public class SellerRegController extends HttpServlet {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
-			
 
 	}
 }

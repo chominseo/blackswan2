@@ -10,6 +10,7 @@
 <meta http-equiv="X-UA-Compatible" content="ie=edge">
 <title>Black Swan Funding</title>
 <link rel="stylesheet" type="text/css" href="../css/style.css">
+<link rel="stylesheet" type="text/css" href="../css/style3.css">
 
 </head>
 
@@ -21,16 +22,15 @@
 			<main>
 
 
-			<section>
-				<h1>판매자등록</h1>
+			<section id="main">
+				<h1 class="hidden">판매자등록</h1>
 
 				<section>
 					<h2>판매자등록 상세</h2>
+					<div class="center">
 					<form action="reg2" method="post" enctype="multipart/form-data">
 						
-						<table>
-							<tbody>
-						
+						<table class="list-table colim">
 								<tr>
 									<th>메이커 이름</th>
 									<td><input type="text" name="companyName"></td>
@@ -60,9 +60,19 @@
 								</tr>
 								<tr>
 									<th>계약정보 1) 사업자 여부 및 정보</th>
-									<td>사업자번호<input type="text" name="companyRegNum"></td>
-									<td>사업자등록증<input type="file" name="companyReg"></td>
-									<td>통장사본<input type="file" name="companyPass"></td>
+									
+								</tr>
+								<tr>
+									<th>사업자번호</th>
+									<td><input type="text" name="companyRegNum"></td>
+								</tr>
+								<tr>
+									<th>사업자등록증</th>
+									<td><input type="file" name="companyReg"></td>
+								</tr>
+								<tr>
+									<th>통장사본</th>
+									<td><input type="file" name="companyPass"></td>
 								</tr>
 								<tr>
 									<th>대표자명</th>
@@ -72,12 +82,12 @@
 									<th>대표자이메일</th>
 									<td><input type="email" name="companyBossEmail"></td>
 								</tr> 
-							</tbody>
 						</table>
 						<div>
 							<input type="submit" value="저장"> <a href="list">취소</a>
 						</div>
 					</form>
+					</div>
 				</section>
 
 

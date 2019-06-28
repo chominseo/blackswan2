@@ -11,6 +11,7 @@
 <meta http-equiv="X-UA-Compatible" content="ie=edge">
 <title>Black Swan Funding</title>
 <link rel="stylesheet" type="text/css" href="../css/style.css">
+<link rel="stylesheet" type="text/css" href="../css/style3.css">
 <script type="text/javascript" src=".././js/funding/buying.js"></script>
 
 </head>

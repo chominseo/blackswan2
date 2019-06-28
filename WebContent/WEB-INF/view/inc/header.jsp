@@ -12,7 +12,7 @@
 				<ul class="main-menu">
 					<li><a href="/blackswan2/funding/list">펀딩</a></li>
 					<c:if test="${ssid != null }">
-					<li><a href="/blackswan2/funding/reg">등록신청</a></li>
+					<li><a href="/blackswan2/funding/reg2">등록신청</a></li>
 					</c:if>
 					<c:if test="${ssid == null}">
 					<li><a href="/blackswan2/member/login">등록신청</a></li>
@@ -45,7 +45,7 @@
 				<h1 class="hidden">마이페이지 링크</h1>
 				<ul>
 					<li><a href="">최근 본 목록</a></li>
-					<li><a href="/blackswan2/member/mypage2">마이페이지</a></li>
+					<li><a href="/blackswan2/member/mypage">마이페이지</a></li>
 					<li><a href="">회원정보수정</a></li>
 					<li><a href="/blackswan2/member/logout">로그아웃</a></li>
 				</ul>

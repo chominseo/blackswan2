@@ -20,7 +20,7 @@ import com.blackswan.web.dao.MemberDao;
 import com.blackswan.web.dao.oracle.OracleMemberDao;
 import com.blackswan.web.entity.Member;
 
-@WebServlet("/member/mypage")
+@WebServlet("/member/profile")
 @MultipartConfig(
 		location = "C:\\profile",
 		fileSizeThreshold = 1024*1024,
@@ -97,7 +97,8 @@ public class ProfileController extends HttpServlet {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
-		req.getRequestDispatcher("/WEB-INF/view/member/mypage.jsp").forward(req, resp);
+		//req.getRequestDispatcher("/WEB-INF/view/member/mypage.jsp").forward(req, resp);
+		resp.sendRedirect("mypage#tab3");
 	}
 
 	
