@@ -34,12 +34,12 @@ public class LoginController extends HttpServlet {
 		try {
 			Member member = memberDao.get(email);
 
-			if (member == null) {
+			if (member == null) {	//가입 되어있지 않을 때
 				resp.sendRedirect("/blackswan2/error");
 			}
-			else if (!member.getPw().equals(pw)) {
+			else if (!member.getPw().equals(pw)) {	//비밀번호 틀렸을 때
 				resp.sendRedirect("/blackswan2/error");
-			} else {
+			} else {	//세션 저장
 				HttpSession session = req.getSession();
 				session.setAttribute("ssid", member.getId());
 				req.setAttribute("hmember", member);
@@ -56,3 +56,7 @@ public class LoginController extends HttpServlet {
 	}
 
 }
+
+
+
+
