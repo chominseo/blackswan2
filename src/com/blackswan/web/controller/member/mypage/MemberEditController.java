@@ -96,7 +96,8 @@ public class MemberEditController extends HttpServlet {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
-		req.getRequestDispatcher("/WEB-INF/view/member/mypage/mypage.jsp").forward(req, resp);
+		//req.getRequestDispatcher("/WEB-INF/view/member/mypage/mypage.jsp").forward(req, resp);
+		req.getRequestDispatcher("/html/member/mypage/mypage.html").forward(req, resp);
 	}
 
 }

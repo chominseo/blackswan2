@@ -34,8 +34,8 @@ public class EditController extends HttpServlet {
 		}
 		
 		
-		request.getRequestDispatcher("/WEB-INF/view/notice/edit.jsp").forward(request, response);
-		
+//		request.getRequestDispatcher("/WEB-INF/view/notice/edit.jsp").forward(request, response);
+		request.getRequestDispatcher("/html/notice/edit.html").forward(request, response);
 		
 	}
 	

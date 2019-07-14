@@ -169,9 +169,7 @@ public class RegController extends HttpServlet {
 
 	@Override
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		// TODO Auto-generated method stub
-		
-
-			request.getRequestDispatcher("/WEB-INF/view/funding/reg.jsp").forward(request, response);
+		//request.getRequestDispatcher("/WEB-INF/view/funding/reg.jsp").forward(request, response);
+		request.getRequestDispatcher("/html/funding/reg.html").forward(request, response);
 	}
 }

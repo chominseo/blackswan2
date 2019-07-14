@@ -1,0 +1,16 @@
+.center {
+	text-align: center;
+	line-height: 180%;
+}
+
+img {
+	width: 100px;
+	height: 100px;
+	display: block;
+	margin: 50px auto 20px;
+}
+
+
+#main {
+    margin: 100px auto;
+}

@@ -53,7 +53,9 @@ public class buyingController extends HttpServlet {
 		}
 		
 		
-		request.getRequestDispatcher("/WEB-INF/view/funding/buying.jsp").forward(request, response);
+//		request.getRequestDispatcher("/WEB-INF/view/funding/buying.jsp").forward(request, response);
+		request.getRequestDispatcher("/html/funding/buying.html").forward(request, response);
+		
 	}
 	
 	

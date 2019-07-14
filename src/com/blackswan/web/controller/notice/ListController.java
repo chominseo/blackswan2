@@ -44,7 +44,8 @@ public class ListController extends HttpServlet {
 		}
 		
 		
-		request.getRequestDispatcher("/WEB-INF/view/notice/list.jsp").forward(request, response);
+//		request.getRequestDispatcher("/WEB-INF/view/notice/list.jsp").forward(request, response);
+		request.getRequestDispatcher("/html/notice/list.html").forward(request, response);
 	}
 	
 }

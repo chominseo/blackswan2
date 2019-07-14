@@ -19,8 +19,8 @@ public class RegController extends HttpServlet{
 	@Override
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		
-		request.getRequestDispatcher("/WEB-INF/view/notice/reg.jsp").forward(request, response);
-		
+		//request.getRequestDispatcher("/WEB-INF/view/notice/reg.jsp").forward(request, response);
+		request.getRequestDispatcher("/html/notice/reg.html").forward(request, response);
 		
 	}
 	

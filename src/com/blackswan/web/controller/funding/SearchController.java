@@ -37,8 +37,8 @@ public class SearchController extends HttpServlet {
 			e.printStackTrace();
 		}
 		
-		
-		req.getRequestDispatcher("/WEB-INF/view/funding/search.jsp").forward(req, resp);
+//		req.getRequestDispatcher("/WEB-INF/view/funding/search.jsp").forward(req, resp);
+		req.getRequestDispatcher("/html/funding/search.html").forward(req, resp);
 	}
 	
 	@Override

@@ -1,0 +1,419 @@
+#banner {
+	height: 310px;
+	background: none;
+}
+
+	#banner .center {
+		position: relative;
+	}
+	
+		#banner .center ul {
+			width: 1200px;
+			height: 310px; 
+			position: relative;
+			overflow: hidden;
+		}
+		
+			#banner .center ul li, #banner .center ul li a, #banner .center ul li a img {
+				width: 100%;
+				height: 100%;
+			}
+			
+			#banner .center ul li {
+				position: absolute;
+				top: 0;
+				left: 0;
+				z-index: 0;
+				transition: left 0.5s ease;
+			}
+			
+			#banner .center ul li.main {
+				z-index: 10;
+				animation: 1s ease;
+			}
+			
+@keyframes right {
+    0% {
+        left: -100%;
+    }
+
+    100% {
+        left: 0;
+    }
+}
+
+@keyframes left {
+    0% {
+        left: 100%;
+    }
+
+    100% {
+        left: 0;
+    }
+}
+	
+		#banner .center .prev-banner, #banner .center .next-banner {
+			width: 47px;
+			height: 47px;
+			position: absolute;
+			background: rgba(255,255,255,0.2);
+			border: 1px solid #fff; 
+			border-radius: 50%;
+			top: 50%;
+			transform: translateY(-50%);
+			box-shadow: 3px 3px 5px rgba(0,0,0,0.2); 
+			transition: background 0.5s ease; 
+			z-index: 999;
+		}
+		
+		#banner .center .prev-banner:hover, #banner .center .next-banner:hover {
+			background: rgba(255,255,255,0.6);
+		}
+		
+			#banner .center div:before {
+				content: "";
+				width: 9px;
+				height: 9px;
+				border: solid #fff;
+				position: absolute; 
+				top: 50%;
+				left: 50%;	
+			}
+	
+		#banner .center .prev-banner {
+			left: 30px;
+		}
+		
+			#banner .center .prev-banner:before {
+				border-width: 0 0 1px 1px;
+				transform: translate(-30%, -50%) rotate(45deg);
+			}
+		
+		#banner .center .next-banner {
+			right: 30px; 
+		}
+		
+			#banner .center .next-banner:before {
+				border-width: 1px 1px 0 0; 
+				transform: translate(-70%, -50%) rotate(45deg);
+			}
+			
+		#banner .center .banner-page {
+			width: 65px;
+			height: 28px;
+			position: absolute;
+			background: rgba(0,0,0,0.2);
+			border: 0; 
+			border-radius: 14px;
+			top: auto;
+			left: 50%;
+			bottom: 33px;
+			transform: translate(-50%, 0);
+			box-shadow: none; 
+			text-align: center; 
+			line-height: 28px;
+			font-size: 14px; 
+			color: #fff; 
+			z-index: 888;
+		}
+		
+			#banner .center .banner-page:before {
+				width: 0;
+				height: 0;
+				border: 0;
+            }
+            
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#main {
+    padding-bottom: 70px;
+}
+
+    #main .center {
+        position: relative;	
+    }
+    
+    #main .tap-select {
+        display: inline-block;
+        width: 100%; 
+        height: 75px;
+    }
+    
+        #main .tap-select ul {
+            height: inherit; 
+            display: flex;
+            justify-content: center;
+            align-items: center; 
+        }
+        
+            #main .tap-select ul li {
+                width: 150px;
+                font-size: 16px;
+                color: #e5e5e5;
+                text-align: center; 
+                line-height: 44px;
+                transition: background 0.5s ease;
+                position: relative;
+            }
+            
+                #main .tap-select ul li:hover {
+                    color: #1f9eff;
+                    font-weight: bold;
+                }
+                
+                #main .tap-select ul li+li:before {
+                    content: "";
+                    width: 1px;
+                    height: 25px;
+                    background: #959595;
+                    position: absolute; 
+                    left: 0;
+                    top: 50%;
+                    transform: translateY(-50%) skewX(-15deg);
+                }
+    
+    #main .page-select {
+        position: absolute; 
+        right: 0;
+        top: 25px;
+    }
+    
+        #main .page-select div {
+            width: 25px;
+            height: 25px;
+            display: inline-block;
+            border: 1px solid #e5e5e5;
+            background: #fff;
+            text-align: center; 
+            line-height: 18px; 
+            float: left;
+        }
+        
+        #main .page-select div:hover {
+            background: #ebebeb;
+        }
+        
+            #main .page-select div:before {
+                content: "";
+                display: inline-block; 
+                width: 8px;
+                height: 8px;
+                transform: rotate(45deg);
+            }
+        
+            #main .page-select .prev-select:before {
+                background: linear-gradient(45deg, #999 50%, transparent 50%);
+                margin-left: 5px;
+            }
+            
+            #main .page-select .next-select:before {
+                background: linear-gradient(45deg, transparent 50%, #999 50%);
+                margin-left: -5px;
+            }
+            
+            #main .page-select .next-select:after {
+                clear: both;
+            }
+    
+    #main .funding-select {
+        display: flex; 
+        width: 100%; 
+    }
+    
+        #main .funding-select .info-select {
+            width: 285px;
+            height: 365px;
+            background: #00b331; 
+            position: relative;
+        }
+    
+            #main .funding-select .info-select .info-title {
+                width: 80px;
+                height: 34px;
+                background: rgba(0,0,0,0.2);
+                text-align: center;
+                font-size: 14px;
+                color: #fff;
+                line-height: 30px;
+                margin: 0 auto;
+            }
+            
+            #main .funding-select .info-select .info-content {
+                font-size: 24px;
+                line-height: 30px;
+                color: #fff; 
+                text-align: center;
+                margin-top: 45px; 
+                padding: 0 20px;
+            }
+            
+            #main .funding-select .info-select .info-count {
+                width: 245px; 
+                margin: 45px 20px 0;
+                padding: 15px 20px;
+                border-top: 1px solid rgba(0,0,0,0.15); 
+            }
+    
+                #main .funding-select .info-select .info-count tr {
+                    width: 100%;
+                    font-size: 16px; 
+                    height: 36px;
+                    color: #fff; 
+                }
+                    
+                    #main .funding-select .info-select .info-count tr td:nth-child(2) {
+                        font-weight: bold; 
+                    }
+                    
+            #main .funding-select .info-select .info-more {
+                width: 100%;
+                height: 50px; 
+                background: rgba(0,0,0,0.2); 
+                color: #fff;
+                font-size: 16px;
+                font-weight: bold;
+                text-align: center;
+                line-height: 50px;
+                position: absolute;
+                bottom: 0; 
+            }	
+    
+        #main .funding-select ul {
+            width: 895px; 
+            height: 365px;
+            margin-left: 20px; 
+            display: flex;
+            justify-content: space-between;
+        }
+        
+            #main .funding-select ul li {
+                width: 285px;
+                height: 100%; 
+                border: 1px solid #e5e5e5;
+            }
+            
+            #main .funding-select ul li:hover {
+                border: 1px solid #0081e0;
+            }
+            
+            #main .funding-select ul li+li {
+                margin-left: 20px;
+            }
+            
+                #main .funding-select ul li a {
+                    display: block;
+                    width: 100%;
+                    height: 100%; 
+                }
+                
+                    #main .funding-select ul li a .item-img {
+                        width: 100%;
+                        height: 180px;
+                        background: #eee; 
+                        border: none;
+                        overflow: hidden;  
+                    }
+                    
+                        #main .funding-select ul li a .item-img img {
+                            width: 100%;
+                            height: 100%; 
+                            transition: transform 0.5s ease;
+                        }
+                    
+                        #main .funding-select ul li:hover a .item-img img {
+                            transform: scale(1.1);
+                        }
+                    
+                    #main .funding-select ul li a .item-info {
+                        padding: 25px 25px 15px;
+                    }
+                    
+                        #main .funding-select ul li a .item-info .title {
+                            font-size: 18px;
+                            line-height: 30px; 
+                            font-weight: bold;
+                            color: #333;
+                            height: 60px;
+                            overflow: hidden;
+                            text-overflow: ellipsis;
+                        }
+                        
+                        #main .funding-select ul li a .item-info .category {
+                            font-size: 14px;
+                            line-height: 36px;
+                            display: flex;
+                            margin-top: 10px;  
+                        }
+                        
+                            #main .funding-select ul li a .item-info .category span {
+                                    line-height: inherit;
+                                    color: #666;
+                                    display: inline-block;
+                            }
+                        
+                            #main .funding-select ul li a .item-info .category span:first-child {
+                                color: #333;
+                            }
+                            
+                            #main .funding-select ul li a .item-info .category span+span {
+                                margin-left: 24px;
+                                position: relative;
+                            }
+                            
+                                #main .funding-select ul li a .item-info .category span+span:before {
+                                    content: "";
+                                    position: absolute;
+                                    width: 1px;
+                                    height: 14px;
+                                    background: #959595;
+                                    top: 50%;
+                                    left: -12px;
+                                    transform: translateY(-50%);
+                                }
+                                
+                        #main .funding-select ul li a .item-info .graph {
+                            width: 100%;
+                            height: 6px; 
+                            background: #e8e8e8;
+                            overflow: hidden; 
+                        }
+                        
+                            #main .funding-select ul li a .item-info .graph .percent {
+                                height: inherit;
+                                background: #1f9eff;
+                                max-width: 100%; 
+                            }
+                            
+                            #main .funding-select ul li.complete .item-info .graph .percent {
+                                background: #00b331;
+                            }
+                            
+                        #main .funding-select ul li a .item-info .gvalue {
+                            width: 100%;
+                            display: flex;
+                            justify-content: space-between;
+                        }
+                        
+                            #main .funding-select ul li a .item-info .gvalue span {
+                                font-size: 16px;
+                                line-height: 36px;
+                                color: #666;
+                            }
+                        
+                            #main .funding-select ul li a .item-info .gvalue span:first-child {
+                                color: #1a85d6;
+                                font-weight: bold;
+                            }		
+            

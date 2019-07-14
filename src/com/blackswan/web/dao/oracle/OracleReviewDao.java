@@ -52,5 +52,38 @@ public class OracleReviewDao implements ReviewDao {
 		return list;
 	}
 
+	@Override
+	public ReviewView delete(int id) throws ClassNotFoundException, SQLException {
+		return null;
+	}
+
+	@Override
+	public ReviewView get(int id) throws ClassNotFoundException, SQLException {
+		return null;
+	}
+
+	@Override
+	public int update(ReviewDao review) throws ClassNotFoundException, SQLException {
+		return 0;
+	}
+
+	@Override
+	public List<ReviewView> getList() throws ClassNotFoundException, SQLException {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public List<ReviewView> getList(int page) throws ClassNotFoundException, SQLException {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public int insert(ReviewView r) throws ClassNotFoundException, SQLException {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
 
 }

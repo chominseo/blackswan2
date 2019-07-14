@@ -29,7 +29,8 @@ public class EditController extends HttpServlet {
 		} catch (SQLException e) {
 			e.printStackTrace();
 		}
-		req.getRequestDispatcher("/WEB-INF/view/qna/edit.jsp").forward(req,resp);
+//		req.getRequestDispatcher("/WEB-INF/view/qna/edit.jsp").forward(req,resp);
+		req.getRequestDispatcher("/html/qna/edit.html").forward(req,resp);
 	}
 
 	@Override
