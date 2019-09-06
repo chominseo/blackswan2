@@ -27,7 +27,7 @@ public class CategoryController extends HttpServlet {
 			resp.sendRedirect("/blackswan2/error");
 			return;
 		}
-
+ 
 		List<CategoryView> list = new ArrayList<>();
 		CategoryDao cDao = new OracleCategoryDao();
 		
