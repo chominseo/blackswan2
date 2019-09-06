@@ -81,6 +81,7 @@ public class ListController extends HttpServlet {
 			} catch (Exception e) {
 				e.printStackTrace();
 			}
-			req.getRequestDispatcher("/WEB-INF/view/admin/event/list.jsp").forward(req, resp);
+//			req.getRequestDispatcher("/WEB-INF/view/admin/event/list.jsp").forward(req, resp);
+		req.getRequestDispatcher("/html/admin/event/list.html").forward(req, resp);
 	}
 }

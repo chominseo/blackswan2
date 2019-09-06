@@ -41,7 +41,9 @@ public class DetailController extends HttpServlet {
 		} catch (SQLException e) {
 			e.printStackTrace();
 		}
-		req.getRequestDispatcher("/WEB-INF/view/funding/detail.jsp").forward(req, resp);
+//		req.getRequestDispatcher("/WEB-INF/view/funding/detail.jsp").forward(req, resp);
+		req.getRequestDispatcher("/html/funding/detail.html").forward(req, resp);
+		
 	}
 
 	@Override

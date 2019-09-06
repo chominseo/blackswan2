@@ -50,7 +50,8 @@ public class RegController extends HttpServlet {
 		
 		
 		req.setAttribute("funding", funding);
-		req.getRequestDispatcher("/WEB-INF/view/member/event/reg.jsp").forward(req,resp);
+		//req.getRequestDispatcher("/WEB-INF/view/member/event/reg.jsp").forward(req,resp);
+		req.getRequestDispatcher("/html/member/event/reg.html").forward(req,resp);
 			
 		}
 	@Override

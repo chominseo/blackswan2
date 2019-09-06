@@ -68,11 +68,11 @@
 					<table class="info-count">
 						<tr>
 							<td>참여</td>
-							<td>000명</td>
+							<td>316명</td>
 						</tr>
 						<tr>
 							<td>참여금액</td>
-							<td>0,000,000원</td>
+							<td>8,258,200원</td>
 						</tr>
 					</table>
 					<div class="info-more">

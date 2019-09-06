@@ -59,8 +59,9 @@ public class CategoryController extends HttpServlet {
 	
 		req.setAttribute("sum", sum);
 		req.setAttribute("countlist", list);
-		req.getRequestDispatcher("/WEB-INF/view/admin/category/category.jsp").forward(req, resp);
-		return;
+//		req.getRequestDispatcher("/WEB-INF/view/admin/category/category.jsp").forward(req, resp);
+		
+		req.getRequestDispatcher("/html/admin/category/category.html").forward(req, resp);
 
 	}
 }

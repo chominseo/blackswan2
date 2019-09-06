@@ -15,14 +15,9 @@ public class RegController extends HttpServlet {
 	protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
 
 		
-		req.getRequestDispatcher("/WEB-INF/view/qna/reg").forward(req, resp);
+//		req.getRequestDispatcher("/WEB-INF/view/qna/reg.jsp").forward(req, resp);
+		req.getRequestDispatcher("/html/qna/reg.html").forward(req, resp);
 		
-	}
-	
-	@Override
-	protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-
-		req.getRequestDispatcher("/WEB-INF/view/qna/reg.jsp").forward(req,resp);
 	}
 	
 }

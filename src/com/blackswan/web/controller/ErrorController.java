@@ -14,7 +14,8 @@ public class ErrorController extends HttpServlet{
 	@Override
 	protected void service(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
 
-		req.getRequestDispatcher("/WEB-INF/view/error.jsp").forward(req, resp);
+		//req.getRequestDispatcher("/WEB-INF/view/error.jsp").forward(req, resp);
+		req.getRequestDispatcher("/html/error.html").forward(req, resp);
 		
 	}
 	

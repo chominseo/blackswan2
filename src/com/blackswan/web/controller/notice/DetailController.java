@@ -36,7 +36,8 @@ public class DetailController extends HttpServlet{
 		}
 		
 		
-		request.getRequestDispatcher("/WEB-INF/view/notice/detail.jsp").forward(request, response);
+		//request.getRequestDispatcher("/WEB-INF/view/notice/detail.jsp").forward(request, response);
+		request.getRequestDispatcher("/html/notice/detail.html").forward(request, response);
 	}
 
 }

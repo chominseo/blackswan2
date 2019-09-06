@@ -30,7 +30,8 @@ public class DetailController extends HttpServlet {
 			e.printStackTrace();
 		}
 
-		req.getRequestDispatcher("/WEB-INF/view/admin/funding/detail.jsp").forward(req, resp);	
+//		req.getRequestDispatcher("/WEB-INF/view/admin/funding/detail.jsp").forward(req, resp);	
+		req.getRequestDispatcher("/html/admin/funding/detail.html").forward(req, resp);	
 		
 		
 	}

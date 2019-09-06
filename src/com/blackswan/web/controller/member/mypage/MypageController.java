@@ -43,7 +43,8 @@ public class MypageController extends HttpServlet {
 			e.printStackTrace();
 		}
 		
-		req.getRequestDispatcher("/WEB-INF/view/member/mypage.jsp").forward(req, resp);
+		//req.getRequestDispatcher("/WEB-INF/view/member/mypage.jsp").forward(req, resp);
+		req.getRequestDispatcher("/html/member/mypage.html").forward(req, resp);
 
 	}
 }

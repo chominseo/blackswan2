@@ -28,7 +28,8 @@ public class IndexController extends HttpServlet {
 			e1.printStackTrace();
 		}
 
-		req.getRequestDispatcher("/WEB-INF/view/index.jsp").forward(req, resp);
+		//req.getRequestDispatcher("/WEB-INF/view/index.jsp").forward(req, resp);
+		req.getRequestDispatcher("/html/index.html").forward(req, resp);
 
 	}
 

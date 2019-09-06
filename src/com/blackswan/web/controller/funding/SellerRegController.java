@@ -241,10 +241,13 @@ public class SellerRegController extends HttpServlet {
 		SellerDao sDao = new OracleSellerDao();
 		
 		try {
-			if(sDao.get(sId) == null)
-				request.getRequestDispatcher("/WEB-INF/view/funding/reg2.jsp").forward(request, response);
-			else
-				request.getRequestDispatcher("/WEB-INF/view/funding/reg.jsp").forward(request, response);
+			if(sDao.get(sId) == null) {
+				//request.getRequestDispatcher("/WEB-INF/view/funding/reg2.jsp").forward(request, response);
+				request.getRequestDispatcher("/html/funding/reg2.html").forward(request, response);
+			} else {
+				//request.getRequestDispatcher("/WEB-INF/view/funding/reg.jsp").forward(request, response);
+				request.getRequestDispatcher("/html/funding/reg.html").forward(request, response);
+			}
 		} catch (ClassNotFoundException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();

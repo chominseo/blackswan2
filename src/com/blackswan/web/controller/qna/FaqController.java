@@ -14,23 +14,24 @@ import com.blackswan.web.dao.oracle.OracleQnaDao;
 
 @WebServlet("/qna/faq")
 public class FaqController extends HttpServlet {
-	
-@Override
-protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-	
-	QnaDao qnaDao = new OracleQnaDao();
-	
-	try {
-		req.setAttribute("qlist", qnaDao.getList());
-		
-	} catch (ClassNotFoundException e) {
-		e.printStackTrace();;
 
+	@Override
+	protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+
+		QnaDao qnaDao = new OracleQnaDao();
+
+		try {
+			req.setAttribute("qlist", qnaDao.getList());
+
+		} catch (ClassNotFoundException e) {
+			e.printStackTrace();
+			;
+
+		} catch (SQLException e) {
+			e.printStackTrace();
+
+		}
+		//req.getRequestDispatcher("/WEB-INF/view/qna/faq.jsp").forward(req, resp);
+		req.getRequestDispatcher("/html/qna/faq.html").forward(req, resp);
 	}
-	catch (SQLException e) {
-		e.printStackTrace();
-		
-	}
-	req.getRequestDispatcher("/WEB-INF/view/qna/faq.jsp").forward(req,resp);
-}
 }
